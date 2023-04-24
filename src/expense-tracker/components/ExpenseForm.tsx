@@ -33,7 +33,7 @@ const ExpenseForm = ({ onSubmit }: Props) => {
         })}>
             <div className="mb-3">
                 <label htmlFor="description" className="form-label">Description</label>
-                <input {...register('description')} type="text" name="description" id="description" />
+                <input {...register('description')} type="text" name="description" id="description" className="form-control" />
                 {errors.description && <p className="text-danger">{errors.description.message}</p>}
             </div>
             <div className="mb-3">
